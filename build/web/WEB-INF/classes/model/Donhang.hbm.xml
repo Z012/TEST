@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2017 10:38:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Donhang" table="donhang" catalog="dbshophlh" optimistic-lock="version">
+        <id name="idDonHang" type="java.lang.Integer">
+            <column name="IdDonHang" />
+            <generator class="identity" />
+        </id>
+        <property name="ngayDatHang" type="timestamp">
+            <column name="NgayDatHang" length="19" />
+        </property>
+        <property name="ngayNhanHang" type="timestamp">
+            <column name="NgayNhanHang" length="19" />
+        </property>
+        <property name="trangThai" type="java.lang.Boolean">
+            <column name="TrangThai" />
+        </property>
+        <property name="idUser" type="int">
+            <column name="IdUser" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

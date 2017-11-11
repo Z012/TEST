@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2017 10:38:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Khuyenmai" table="khuyenmai" catalog="dbshophlh" optimistic-lock="version">
+        <id name="idKhuyenMai" type="java.lang.Integer">
+            <column name="IdKhuyenMai" />
+            <generator class="identity" />
+        </id>
+        <property name="tenKhuyenMai" type="string">
+            <column name="TenKhuyenMai" length="50" />
+        </property>
+        <property name="hinhThuc" type="string">
+            <column name="HinhThuc" length="50" />
+        </property>
+        <property name="ngayBatDau" type="timestamp">
+            <column name="NgayBatDau" length="19" />
+        </property>
+        <property name="ngayKetThuc" type="timestamp">
+            <column name="NgayKetThuc" length="19" />
+        </property>
+        <property name="anhKm" type="string">
+            <column name="AnhKM" length="1000" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2017 10:38:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Company" table="company" catalog="dbshophlh" optimistic-lock="version">
+        <id name="idCompany" type="java.lang.Integer">
+            <column name="IdCompany" />
+            <generator class="identity" />
+        </id>
+        <property name="nameCompany" type="string">
+            <column name="NameCompany" length="50" />
+        </property>
+        <property name="addressCompany" type="string">
+            <column name="AddressCompany" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

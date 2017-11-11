@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2017 10:38:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Account" table="account" catalog="dbshophlh" optimistic-lock="version">
+        <id name="idUser" type="java.lang.Integer">
+            <column name="IdUser" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="Name" length="50" />
+        </property>
+        <property name="address" type="string">
+            <column name="Address" length="100" />
+        </property>
+        <property name="phone" type="string">
+            <column name="Phone" length="50" />
+        </property>
+        <property name="account" type="string">
+            <column name="Account" length="50" />
+        </property>
+        <property name="password" type="string">
+            <column name="Password" length="50" />
+        </property>
+        <property name="idGroupUser" type="java.lang.Integer">
+            <column name="IdGroupUser" />
+        </property>
+    </class>
+</hibernate-mapping>

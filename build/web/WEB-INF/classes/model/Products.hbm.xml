@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 11, 2017 10:38:08 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Products" table="products" catalog="dbshophlh" optimistic-lock="version">
+        <id name="idProduct" type="java.lang.Integer">
+            <column name="IdProduct" />
+            <generator class="identity" />
+        </id>
+        <property name="nameProduct" type="string">
+            <column name="NameProduct" length="50" />
+        </property>
+        <property name="idCategory" type="java.lang.Integer">
+            <column name="IdCategory" />
+        </property>
+        <property name="idCompany" type="java.lang.Integer">
+            <column name="IdCompany" />
+        </property>
+        <property name="soLuong" type="java.lang.Integer">
+            <column name="SoLuong" />
+        </property>
+        <property name="donGia" type="string">
+            <column name="DonGia" length="50" />
+        </property>
+        <property name="donViTinh" type="string">
+            <column name="DonViTinh" length="50" not-null="true" />
+        </property>
+        <property name="trangThai" type="java.lang.Boolean">
+            <column name="TrangThai" />
+        </property>
+        <property name="tinhTrang" type="java.lang.Boolean">
+            <column name="TinhTrang" />
+        </property>
+        <property name="anhSp" type="string">
+            <column name="AnhSP" length="1000" />
+        </property>
+        <property name="idKhuyenMai" type="java.lang.Integer">
+            <column name="IdKhuyenMai" />
+        </property>
+        <property name="anhct" type="string">
+            <column name="Anhct" length="1000" />
+        </property>
+        <property name="ngayTao" type="timestamp">
+            <column name="NgayTao" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
